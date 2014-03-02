@@ -1,0 +1,29 @@
+{
+  "name": "API",
+  "version": "0.0.1",
+  "description": "API services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GoBitcoin/API.git"
+  },
+  "author": "Joey Zhou",
+  "bugs": {
+    "url": "https://github.com/GoBitcoin/API/issues"
+  },
+  "dependencies": {
+    "hapi": "~1.9.0",
+    "underscore": "~1.5.1",
+    "async": "~0.2.9",
+    "request": "~2.30.0",
+    "winston": "~0.7.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-hapi": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
