@@ -22,7 +22,8 @@
     "winston": "~0.7.2",
     "new-base-61": "0.0.1",
     "redis": "~0.10.1",
-    "protobuf": "~0.8.7"
+    "protobuf": "~0.8.7",
+    "bignum": "~0.6.2"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
