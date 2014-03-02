@@ -8,6 +8,10 @@ API of super secret project
 
 `git submodule init, sync`
 
+`brew install protobuf`
+
+`sh bootstrap.sh`
+
 #### CREATE
 
 localhost:8001/create?address={address}&amount={amount}&memo={memo}&ackmemo={ackmemo}
