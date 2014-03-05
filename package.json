@@ -21,9 +21,9 @@
     "request": "~2.30.0",
     "winston": "~0.7.2",
     "new-base-61": "0.0.1",
-    "redis": "~0.10.1",
     "protobuf": "~0.8.7",
-    "bignum": "~0.6.2"
+    "bignum": "~0.6.2",
+    "pg": "~2.11.1"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
