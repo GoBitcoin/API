@@ -17,7 +17,7 @@
   "dependencies": {
     "hapi": "~1.9.0",
     "underscore": "~1.5.1",
-    "async": "~0.2.9",
+    "async": "~0.2.10",
     "request": "~2.30.0",
     "winston": "~0.7.2",
     "new-base-61": "0.0.1",
