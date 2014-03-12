@@ -25,15 +25,14 @@ API of super secret project
 
 ## PAY
 **Example:**`localhost:8001/pay/{id}`
-####Get flow:
+####Pay flow:
   1. After create generates the pay URL, the user will open it up (in some wallet app)
   2. When we receive the get for /pay/{id} we simply look it up in the db and return the corresponding payment request protobuf. The client (wallet on user's phone) is responsible for verifying the signing, as well as displaying the payment info
   3. User confirms the payment, and the wallet will send a post to our /send/{id}
 
-## PAY
-
+## SEND
 **Example:**`localhost:8001/send/{id}`
-####Pay flow:
+####Send flow:
   1. Here we will receive the Payment protobuf from the user's wallet, we will deserialize it
   2. Find the payment request protobuf corresponds to the id passed in from the database, and construct the "BroadcastPayment" protobuf
   3. POST that protobuf to the broadcast server
