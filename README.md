@@ -20,19 +20,19 @@ API of super secret project
   2. If the duplication check returns no result, we now know this is a new payment detail. We insert it to the database, and the database would return us the id of the new record
   3. After we get the id from the database, we will now construct the payment details protobuf and send it to the signing server to get it signed.
   4. The signing server will return us the protobuf of payment request. We will now store this payment request into our database into the same row as above.
-  5. We then generate a link /get/{id} and return that to the user
+  5. We then generate a link /pay/{id} and return that to the user
 
 
-## GET
-**Example:**`localhost:8001/get/{id}`
+## PAY
+**Example:**`localhost:8001/pay/{id}`
 ####Get flow:
-  1. After create generates the get URL, the user will open it up (in some wallet app)
-  2. When we receive the get for get/{id} we simply look it up in the db and return the corresponding payment request protobuf. The client (wallet on user's phone) is responsible for verifying the signing, as well as displaying the payment info
-  3. User confirms the payment, and the wallet will send a post to our /pay/{id}
+  1. After create generates the pay URL, the user will open it up (in some wallet app)
+  2. When we receive the get for /pay/{id} we simply look it up in the db and return the corresponding payment request protobuf. The client (wallet on user's phone) is responsible for verifying the signing, as well as displaying the payment info
+  3. User confirms the payment, and the wallet will send a post to our /send/{id}
 
 ## PAY
 
-**Example:**`localhost:8001/pay/{id}`
+**Example:**`localhost:8001/send/{id}`
 ####Pay flow:
   1. Here we will receive the Payment protobuf from the user's wallet, we will deserialize it
   2. Find the payment request protobuf corresponds to the id passed in from the database, and construct the "BroadcastPayment" protobuf
