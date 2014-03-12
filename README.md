@@ -6,7 +6,9 @@ API of super secret project
 ##Install
 `npm install`
 
-`git submodule init, sync`
+`git submodule init`
+
+`git submodule update`
 
 `brew install protobuf`
 
