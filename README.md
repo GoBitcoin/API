@@ -14,6 +14,10 @@ API of super secret project
 
 `sh bootstrap.sh`
 
+##Change config
+rename lib/api/example_config.js to config.js
+fill it in according to your setup.
+
 ##API
 ### CREATE
 **Example:**`localhost:8001/create?address={address}&amount={amount}&memo={memo}&ackmemo={ackmemo}`

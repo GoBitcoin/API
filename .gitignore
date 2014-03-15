@@ -16,3 +16,5 @@ node_modules/
 data/mongo.json/
 data/*.bson
 data/log
+
+lib/api/config.js
