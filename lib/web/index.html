@@ -1,12 +1,31 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.4.2/base-min.css&pure/0.4.2/forms-min.css">
 </head>
 <body>
-	<input type="text" placeholder="address">
-    <input type="number" placeholder="amount">
-    <input type="text" placeholder="memo">
-    <input type="text" placeholder="ack memo">
-    <input type="submit">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <div id="container">
+    <div id="logo">
+      <div class="content">
+      <span class="bold white">misi</span>
+      <span class="green">.</span>
+      <span class="white">to</span>
+    </div>
+    </div>
+    <div id="form">
+      <div id="form-header">Create Payment Request</div>
+      <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <input id="address" type="text" placeholder="Address">
+            <input id="amount" type="number" placeholder="Amount (mBTC)">
+            <div class="hidden">
+              <input type="text" placeholder="Memo">
+              <input type="text" placeholder="Ack Memo">
+            </div>
+            <div id="submitButton">SUBMIT</div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 </body>
 
