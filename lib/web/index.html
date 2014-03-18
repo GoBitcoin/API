@@ -27,5 +27,25 @@
     </div>
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <!-- Don't give a shit if UI is shit code, it's fucking UI -->
+  <script>
+    $("#submitButton").click(function() {
+      var apiUri = "http://localhost:8001/create";
+      $.ajax({
+        type: "POST",
+        url: apiUri,
+        data: {
+            'address':'2342938404jlkkgjsdf732j34m',
+            'amount' : 5,
+            'memo': 'blah',
+            'ackMemo': 'blah'
+        },
+        success:function(data) {
+            // This outputs the result of the ajax request
+            console.log(data);
+        }
+      });
+    });
+  </script>
 </body>
 
