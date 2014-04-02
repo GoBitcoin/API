@@ -45,7 +45,7 @@
       url: apiUri,
       data: {
         'address':$('#address').val() || 'invalidAddress',
-        'amount' : $('#amount').val() || 0,
+        'amount' : $('#amount').val()*100000 || 0,
         'memo': $('#memo').val() || 'default memo',
         'ackmemo': $('#ackMemo').val() || 'default ackmemo'
       },
