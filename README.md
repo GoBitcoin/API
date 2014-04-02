@@ -12,7 +12,10 @@ API of super secret project
 
 `brew install protobuf`
 
-`sh bootstrap.sh`
+`grunt build`
+
+`grunt server`
+
 
 ##Change config
 rename lib/api/example_config.js to config.js
