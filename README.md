@@ -21,6 +21,9 @@ API of super secret project
 rename lib/api/example_config.js to config.js
 fill it in according to your setup.
 
+##Deploy
+[Wiki](https://github.com/GoBitcoin/API/wiki/Deploy)
+
 ##API
 ### CREATE
 **Example:**`localhost:8001/create?address={address}&amount={amount}&memo={memo}&ackmemo={ackmemo}`
